@@ -139,7 +139,7 @@ main {
 .container .profile-data .repositories ul li a{
   font-size: 1.6rem;
   padding: 2rem;
-  border: 0.1rem solid var(--borders);  
+  border: 0.1rem solid var(--active);  
   margin: 2rem;
   display: block;
   border-radius: 0.7rem;
@@ -149,6 +149,7 @@ main {
 .container .profile-data .repositories ul li a:hover{
   background-color:var(--active);
   color: var(--hover-default);
+  transform: scale(1.05);
 }
 
 .container .profile-data.hide{
