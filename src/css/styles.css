@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+html{
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color:var(--primary-color);
+  font-family: "Kumbh Sans", sans-serif;  
+  text-align: center;    
+  padding-bottom: 10rem;
+}
+
+main {
+  display: flex;  
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0 0;      
+}
+
+.devicon-github-original{
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  color: var(--icon-color);
+}
+
+.section{
+  padding: 7rem 0;
+}
+
+.container {
+  width: 60%;
+  max-width: 96rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2.5rem 5rem -1.2rem;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.container header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.container header #input-search {
+  width: 40rem;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 0.1rem solid var(--borders);
+}
+
+.container header #btn-search {
+  width: 20rem;
+  font-size: 1.7rem;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border-radius: 0.7rem;  
+  cursor: pointer;
+  border:none;
+}
+
+.container header #btn-search:hover {
+  background-color: var(--active);
+  color: var(--hover-default);
+}
+
+.container header #input-search:focus{
+  border: 0.1rem solid var(--active);
+  outline: none;
+}
+
+.container .profile-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;  
+}
+
+.container .profile-data .info {
+  display: flex;  
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .profile-data .info .data{
+  padding: 4rem;
+  width: 50%;
+}
+
+.container .profile-data .info img{
+  width: 50%;
+  border-radius: 50%;
+  border: 0.5rem solid var(--active);
+  box-shadow: 0.3rem 0.6rem 0.9rem rgb(210, 30, 210);
+}
+
+.container .profile-data .info h1{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.container .profile-data .info p{
+  font-size: 1.5rem;  
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+.container .profile-data .repositories h2{
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.container .profile-data .repositories ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .profile-data .repositories ul li a{
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 0.1rem solid var(--borders);  
+  margin: 2rem;
+  display: block;
+  border-radius: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .repositories ul li a:hover{
+  background-color:var(--active);
+  color: var(--hover-default);
+}
+
+.container .profile-data.hide{
+  display: none;
+}
+
+.container .profile-data h3{
+  font-size: 2rem;
+}
