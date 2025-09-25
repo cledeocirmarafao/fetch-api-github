@@ -159,3 +159,15 @@ main {
 .container .profile-data h3{
   font-size: 2rem;
 }
+
+.container .user-stats{
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.container .user-stats .followers-stats, .container .user-stats .following-stats{
+  border: 0.2rem solid var(--active);
+  padding: 1rem;
+  border-radius: 1rem;
+}
