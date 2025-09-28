@@ -16,6 +16,16 @@ async function filterEvents(userName) {
       (event) => event.type === "CreateEvent"
     );
 
+    try {
+  
+    if (eventPush.length === 0 && eventCreate.length === 0) {
+      document.querySelector(".profile-data").innerHTML += "";
+      return;
+    }
+  } catch (err) {
+    console.error("Erro ao buscar eventos:", err);
+  }
+
     const pushData = eventPush.map((event) => {
       return {
         repo: event.repo?.name ?? 'Repositório Desconhecido',
