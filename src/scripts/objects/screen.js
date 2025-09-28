@@ -15,6 +15,7 @@ const screen = {
     </div>
                     </div>
                     </div>`;
+                    
     let repositoriesItens = "";
     user.repositories.forEach(
       (repo) =>
@@ -27,10 +28,6 @@ const screen = {
                             <ul>${repositoriesItens}</ul>
                     </div>`;
     }
-
-    // this.userProfile.innerHTML += `
-    
-
   },
   renderNotFound() {
     this.userProfile.innerHTML = "<h3>Usuário não encontrado 😥</h3>";
