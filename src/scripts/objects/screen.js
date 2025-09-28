@@ -9,6 +9,10 @@ const screen = {
                     <div class="data">
                     <h1>${user.name ?? "Usuário não cadastrado 😥"}</h1>
                     <p>${user.bio ?? "Bio não cadastrada 😥"}</p>
+                    <div class="user-stats">
+        <span class="followers-stats">👥 Seguidores: ${user.followers}</span>
+        <span class="following-stats">👣 Seguindo: ${user.following}</span>
+    </div>
                     </div>
                     </div>`;
     let repositoriesItens = "";
@@ -24,11 +28,8 @@ const screen = {
                     </div>`;
     }
 
-    this.userProfile.innerHTML += `
-    <div class="user-stats">
-        <span class="followers-stats">👥 Seguidores: ${user.followers}</span>
-        <span class="following-stats">👣 Seguindo: ${user.following}</span>
-    </div>`
+    // this.userProfile.innerHTML += `
+    
 
   },
   renderNotFound() {
