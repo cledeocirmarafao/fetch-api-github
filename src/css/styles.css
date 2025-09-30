@@ -65,6 +65,11 @@ main {
   padding: 1rem;
   border-radius: 0.7rem;
   border: 0.1rem solid var(--borders);
+  outline: none;
+}
+
+.container header #input-search:focus{
+  border: 0.1rem solid var(--active);
 }
 
 .container header #btn-search {
