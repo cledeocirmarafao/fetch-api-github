@@ -12,6 +12,15 @@ Aplicação simples que consome a API do GitHub para buscar usuários e listar s
     - Nome
     - Bio
 - Listar repositórios com link direto para cada um
+- Link para o repositório
+- Informações dos repositórios:
+  - Quantidade de forks 🍴
+  - Estrelas ⭐
+  - Watchers 👀
+  - Linguagem principal 👨‍💻
+- Eventos recentes filtrados em:
+  - Push Events
+  - Create Events
 - Tratamento de erro: mensagem de usuário não encontrado
 - Alert se o campo do nome do usuário estiver vazio
 - Search com a tecla 'Enter'
