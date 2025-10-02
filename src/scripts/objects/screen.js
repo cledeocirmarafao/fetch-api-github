@@ -22,10 +22,10 @@ const screen = {
         (repositoriesItens += `<li>
                                     <a href="${repo.html_url}">${repo.name}</a>
                                     <div class="repos-stats">
-                <p class="event" alt="forks">🍴 ${repo.forks}</p>
-                <p class="event">⭐ ${repo.stargazers_count}</p>
-                <p  class="event">👀 ${repo.watchers}</p>
-                <p class="event">👨‍💻 ${repo.language ?? '-'}</p>
+                <span class="event" alt="forks">🍴 ${repo.forks}</span>
+                <span class="event">⭐ ${repo.stargazers_count}</span>
+                <span class="event">👀 ${repo.watchers}</span>
+                <span class="event">👨‍💻 ${repo.language ?? '-'}</span>
               </div>
                               </li>`)
     );
