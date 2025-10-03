@@ -12,7 +12,6 @@ Aplicação simples que consome a API do GitHub para buscar usuários e listar s
     - Nome
     - Bio
 - Listar repositórios com link direto para cada um
-- Link para o repositório
 - Informações dos repositórios:
   - Quantidade de forks 🍴
   - Estrelas ⭐
