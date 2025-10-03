@@ -1,8 +1,8 @@
-:root{
-    --active: rgb(255, 105, 180);
-    --primary-color: rgb(36, 41, 46);
-    --icon-color: rgb(215, 201, 201);
-    --background-color: rgb(142, 133, 133);
-    --borders: rgb(128, 128, 128);
-    --hover-default: rgb(255, 255, 255);
+:root {
+  --active: rgb(255, 105, 180);
+  --primary-color: rgb(36, 41, 46);
+  --icon-color: rgb(215, 201, 201);
+  --background-color: rgb(142, 133, 133);
+  --borders: rgb(128, 128, 128);
+  --hover-default: rgb(255, 255, 255);
 }

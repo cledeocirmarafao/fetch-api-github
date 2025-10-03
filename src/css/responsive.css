@@ -15,31 +15,29 @@
   }
 }
 
- .container header #input-search,
-  .container header #btn-search{
-    background-color: #cbc3c3;
-  }
+.container header #input-search,
+.container header #btn-search {
+  background-color: #cbc3c3;
+}
 
 @media (max-width: 768px) {
   .container header #input-search,
-  .container header #btn-search
-  {
+  .container header #btn-search {
     width: 100%;
   }
 }
 
 @media (max-width: 425px) {
   main {
-    padding: 15% 0;    
+    padding: 15% 0;
   }
 
-  .container .profile-data .info img{
+  .container .profile-data .info img {
     margin-bottom: 2rem;
   }
 
   .container .profile-data .info img,
-  .container .profile-data .info .data
-  {
+  .container .profile-data .info .data {
     width: 100%;
     padding: 0;
   }

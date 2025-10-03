@@ -15,21 +15,23 @@ const screen = {
     </div>
                     </div>
                     </div>`;
-                    
+
     let repositoriesItens = "";
     user.repositories.forEach(
       (repo) =>
         (repositoriesItens += `<li>
-                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                                    <a href="${
+                                      repo.html_url
+                                    }" target="_blank">${repo.name}</a>
                                     <div class="repos-stats">
                 <span class="event" alt="forks">🍴 ${repo.forks}</span>
                 <span class="event">⭐ ${repo.stargazers_count}</span>
                 <span class="event">👀 ${repo.watchers}</span>
-                <span class="event">👨‍💻 ${repo.language ?? '-'}</span>
+                <span class="event">👨‍💻 ${repo.language ?? "-"}</span>
               </div>
                               </li>`)
     );
-    
+
     if (user.repositories.length > 0) {
       this.userProfile.innerHTML += `<div class="repositories">
                             <h2>Repositórios</h2>

@@ -17,18 +17,17 @@ async function filterEvents(userName) {
     );
 
     try {
-  
-    if (eventPush.length === 0 && eventCreate.length === 0) {
-      document.querySelector(".profile-data").innerHTML += "";
-      return;
+      if (eventPush.length === 0 && eventCreate.length === 0) {
+        document.querySelector(".profile-data").innerHTML += "";
+        return;
+      }
+    } catch (err) {
+      console.error("Erro ao buscar eventos:", err);
     }
-  } catch (err) {
-    console.error("Erro ao buscar eventos:", err);
-  }
 
     const pushData = eventPush.map((event) => {
       return {
-        repo: event.repo?.name ?? 'Repositório Desconhecido',
+        repo: event.repo?.name ?? "Repositório Desconhecido",
         commits: event.payload.commits.map((commit) => commit.message),
       };
     });
